@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Math Game Chapter 2</string>
+    <string name="game_title">Ryleigh\'s Math Game</string>
+    <string name="play_button">Play!</string>
+    <string name="high_score_button">High Scores</string>
+    <string name="quit_button">Quit</string>
+    <string name="equals_sign">=</string>
+    <string name="multiply_symbol">X</string>
+</resources>
