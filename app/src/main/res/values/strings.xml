@@ -4,7 +4,14 @@
     <string name="play_button">Play!</string>
     <string name="high_score_button">High Scores</string>
     <string name="quit_button">Quit</string>
+    <string name="left_factor">%1$d</string>
+    <string name="right_factor">%1$d</string>
     <string name="equals_sign">=</string>
     <string name="multiply_symbol">X</string>
+    <string name="player_score">Score : %1$d</string>
+    <string name="player_level">Level: %1$d</string>
+    <string name="choice_one">%1$d</string>
+    <string name="choice_two">%1$d</string>
+    <string name="choice_three">%1$d</string>
 
 </resources>

@@ -15,9 +15,13 @@ public class GameActivity extends AppCompatActivity {
     private int mWrongAnswer1;
     private int mWrongAnswer2;
     private int answerGiven;
+    private int mCurrentScore;
+    private int mCurrentLevel;
 
     private TextView mLeftFactorTextView;
     private TextView mRightFactorTextView;
+    private TextView mCurrentScoreTextView;
+    private TextView mCurrentLevelTextView;
 
     private Button mButtonChoiceOne;
     private Button mButtonChoiceTwo;
@@ -33,15 +37,17 @@ public class GameActivity extends AppCompatActivity {
         mCorrectAnswer = mLeftFactor * mRightFactor;
         mWrongAnswer1 = mCorrectAnswer + 1;
         mWrongAnswer2 = mCorrectAnswer - 1;
+        mCurrentScore = 12;
+        mCurrentLevel = 2;
 
         mLeftFactorTextView = (TextView) findViewById(R.id.left_factor);
-        mLeftFactorTextView.setText("" + mLeftFactor);
+        mLeftFactorTextView.setText(getString(R.string.left_factor, mLeftFactor));
 
         mRightFactorTextView = (TextView) findViewById(R.id.right_factor);
-        mRightFactorTextView.setText("" + mRightFactor);
+        mRightFactorTextView.setText(getString(R.string.right_factor, mRightFactor));
 
         mButtonChoiceOne = (Button) findViewById(R.id.button_choice1);
-        mButtonChoiceOne.setText("" + mCorrectAnswer);
+        mButtonChoiceOne.setText(getString(R.string.choice_one, mCorrectAnswer));
         mButtonChoiceOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,7 +65,7 @@ public class GameActivity extends AppCompatActivity {
         });
 
         mButtonChoiceTwo = (Button) findViewById(R.id.button_choice2);
-        mButtonChoiceTwo.setText("" + mWrongAnswer1);
+        mButtonChoiceTwo.setText(getString(R.string.choice_two, mWrongAnswer1));
         mButtonChoiceTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +83,7 @@ public class GameActivity extends AppCompatActivity {
         });
 
         mButtonChoiceThree = (Button) findViewById(R.id.button_choice3);
-        mButtonChoiceThree.setText("" + mWrongAnswer2);
+        mButtonChoiceThree.setText(getString(R.string.choice_three, mWrongAnswer2));
         mButtonChoiceThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,5 +99,11 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
         });
+
+        mCurrentScoreTextView = (TextView) findViewById(R.id.player_score);
+        mCurrentScoreTextView.setText(getString(R.string.player_score, mCurrentScore));
+
+        mCurrentLevelTextView = (TextView) findViewById(R.id.player_level);
+        mCurrentLevelTextView.setText(getString(R.string.player_level, mCurrentLevel));
     }
 }
