@@ -33,7 +33,7 @@
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/playButton"
+        app:layout_constraintBottom_toBottomOf="@+id/play_button"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="35dp"
         tools:layout_constraintLeft_creator="1"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView"/>
 
     <Button
-        android:id="@+id/playButton"
+        android:id="@+id/play_button"
         android:layout_width="115dp"
         android:layout_height="wrap_content"
         android:text="@string/play_button"
@@ -61,9 +61,9 @@
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/quit_button"
-        app:layout_constraintRight_toRightOf="@+id/playButton"
+        app:layout_constraintRight_toRightOf="@+id/play_button"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/playButton"/>
+        app:layout_constraintLeft_toLeftOf="@+id/play_button"/>
 
     <Button
         android:id="@+id/quit_button"
@@ -77,4 +77,5 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="182dp"
         app:layout_constraintLeft_toLeftOf="@+id/high_score_button"/>
+
 </android.support.constraint.ConstraintLayout>

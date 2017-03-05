@@ -13,20 +13,25 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        int leftFactor = 0;
-        int rightFactor = 0;
-        int correct_answer = 0;
-        int wrongAnswer1 = 0;
-        int worngAnswer2 = 0;
+        int mLeftFactor = 9;
+        int mRightFactor = 9;
+        int mCorrect_answer = mLeftFactor * mRightFactor;
+        int mWrongAnswer1 = mCorrect_answer + 1;
+        int mWrongAnswer2 = mCorrect_answer - 1;
 
-        TextView mLeftFactor = (TextView) findViewById(R.id.left_factor);
+        TextView mLeftFactorTextView = (TextView) findViewById(R.id.left_factor);
+        mLeftFactorTextView.setText("" + mLeftFactor);
 
-        TextView mRightFactor = (TextView) findViewById(R.id.right_factor);
+        TextView mRightFactorTextView = (TextView) findViewById(R.id.right_factor);
+        mRightFactorTextView.setText(" " + mRightFactor);
 
-        Button mChoiceOne = (Button) findViewById(R.id.button_choice1);
+        Button mButtonChoiceOne = (Button) findViewById(R.id.button_choice1);
+        mButtonChoiceOne.setText("" + mCorrect_answer);
 
-        Button mChoiceTwo = (Button) findViewById(R.id.button_choice2);
+        Button mButtonChoiceTwo = (Button) findViewById(R.id.button_choice2);
+        mButtonChoiceTwo.setText("" + mWrongAnswer1);
 
-        Button mChoiceThree = (Button) findViewById(R.id.button_choice3);
+        Button mButtonChoiceThree = (Button) findViewById(R.id.button_choice3);
+        mButtonChoiceThree.setText("" + mWrongAnswer2);
     }
 }
