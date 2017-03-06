@@ -13,5 +13,6 @@
     <string name="choice_one">%1$d</string>
     <string name="choice_two">%1$d</string>
     <string name="choice_three">%1$d</string>
+    <string name="image_description">Update me!</string>
 
 </resources>
