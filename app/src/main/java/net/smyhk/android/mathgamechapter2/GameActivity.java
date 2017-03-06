@@ -181,14 +181,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 mButtonChoiceThree.setText(getString(R.string.choice_three, mWrongAnswer2));
                 break;
             case 1:
-                mButtonChoiceTwo.setText(getString(R.string.choice_two, mWrongAnswer1));
+                mButtonChoiceTwo.setText(getString(R.string.choice_two, mCorrectAnswer));
                 mButtonChoiceThree.setText(getString(R.string.choice_three, mWrongAnswer2));
-                mButtonChoiceOne.setText(getString(R.string.choice_one, mCorrectAnswer));
+                mButtonChoiceOne.setText(getString(R.string.choice_one, mWrongAnswer1));
                 break;
             case 2:
-                mButtonChoiceThree.setText(getString(R.string.choice_three, mWrongAnswer2));
-                mButtonChoiceOne.setText(getString(R.string.choice_one, mCorrectAnswer));
-                mButtonChoiceTwo.setText(getString(R.string.choice_two, mWrongAnswer1));
+                mButtonChoiceThree.setText(getString(R.string.choice_three, mCorrectAnswer));
+                mButtonChoiceOne.setText(getString(R.string.choice_one, mWrongAnswer1));
+                mButtonChoiceTwo.setText(getString(R.string.choice_two, mWrongAnswer2));
                 break;
         }
     } // end setQuestion
